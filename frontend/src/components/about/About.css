@@ -9,14 +9,15 @@
 
 .left {
     width: 50%;
+    margin: auto;
     align-items: center;
     justify-content: center;
 }
 .left img {
     position: relative;
     width: 400px;
-    left: 20px;
-    top: 50px;
+    border-radius: 20px;
+    left: 80px;
 }
 
 .right {
