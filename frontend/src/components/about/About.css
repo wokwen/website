@@ -1,0 +1,12 @@
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 900px;
+}
+
+img {
+    width: 50%;
+}
