@@ -20,5 +20,12 @@
 }
 
 .right {
+    display: flex;
     width: 50%;
+    margin: auto;
+}
+.right p {
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
