@@ -1,3 +1,23 @@
 .navbar {
-    
+    background-color: #21bdc8;
+    overflow: hidden;
+    top: 0;
+    width: 100%; 
+    position: fixed;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-link {
+    color: rgb(255, 255, 254); 
+    margin: 20px 40px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 800;
 }

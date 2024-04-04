@@ -5,8 +5,12 @@ import './About.css';
 function About() {
     return (
         <div className='about'>
-            <a href="linkedin.com/wisdom-okwen"></a>
-            <img src={ profile_picture } alt="profile" />
+            <div className='left'>
+                <img src={ profile_picture } alt="profile" />
+            </div>
+            <div className="right">
+                <p>Hey there, my name is wisdom</p>
+            </div>
         </div>
     )
 }
