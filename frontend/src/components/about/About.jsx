@@ -12,7 +12,7 @@ function About() {
                 <p>Hey there, my name is wisdom</p>
             </div>
         </div>
-    )
+    );
 }
 
 export default About;

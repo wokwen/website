@@ -11,7 +11,7 @@ function Navbar() {
                 <a href="" className="nav-link">Resume</a>
             </nav>
         </div>
-    )
+    );
 }
 
 export default Navbar;
