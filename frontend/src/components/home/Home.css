@@ -1,7 +1,8 @@
 #home {
+    margin: auto;
     height: 100vh;
     margin-top: 60px;
-    animation: backGround 10s infinite linear;
+    animation: backGround 12s infinite linear;
 }
 
 #contact {
@@ -38,24 +39,24 @@
 
 @keyframes backGround {
     0% {
-        background-color: #51ff00; /* Light salmon */
+        background-color: #7ff8e6; /* Light salmon */
     }
     10% {
-        background-color: #00ff80; /* Vivid pink */
+        background-color: #67f3c9; /* Vivid pink */
     }
     20% {
         background-color: #00f9cb; /* Dark slate blue */
     }
     30% {
-        background-color: #00eaff;
+        background-color: rgb(111, 202, 238);
     }
     40% {
         background-color: #00ffee;
     }
     75% {
-        background-color: #00ffbf;
+        background-color: #63f1cd;
     }
     100% {
-        background-color: #00ff6e; /* Light salmon, back to start */
+        background-color: #84f7cf; /* Light salmon, back to start */
     }
 }
