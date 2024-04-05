@@ -1,6 +1,6 @@
 const projects = [
     {
-        title: "",
+        title: "Contageon Simulation",
         url: "",
         built_with: [],
     }

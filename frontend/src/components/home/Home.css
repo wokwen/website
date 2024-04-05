@@ -1,39 +1,71 @@
 #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     height: 100vh;
     margin-top: 60px;
     animation: backGround 12s infinite linear;
+    color: rgb(126, 11, 234);
 }
 
-#contact {
+.name {
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-color: rgb(228, 223, 223);
+}
+.name p {
+    font-size: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#icon {
+.interests {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.interests p {
+  font-size: 30px;  
+}
+.socials {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     font-weight: bold;
 }
+
 #github {
-    font-size: 40px;
+    margin: 0 20px;
+    font-size: 50px;
     color: black;
 }
+
 #instagram {
-    font-size: 40px;
+    margin: 0 20px;
+    font-size: 50px;
     color: purple;
 }
+
 #youtube {
-    font-size: 40px;
+    margin: 0 20px;
+    font-size: 50px;
     color: red;
 }
+
 #facebook {
-    font-size: 40px;
+    margin: 0 20px;
+    font-size: 50px;
     color: rgb(21, 94, 240);
 }
+
 #linkedin {
-    font-size: 40px;
+    margin: 0 20px;
+    font-size: 50px;
     color: rgb(21, 116, 240);
 }
 

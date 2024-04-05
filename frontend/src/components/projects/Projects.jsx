@@ -11,7 +11,13 @@ function Projects() {
             <h1>Projects</h1>
 
             {projects.map((project, index) => (
-                <Card key={index} variant="outlined" />
+                <Card key={index} project={project} variant="outlined">
+                    <CardContent>
+                        {project.title}
+                        {project.url}
+                    </CardContent>
+                </Card>
+
             ))}
         </div>
     );
