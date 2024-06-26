@@ -5,11 +5,16 @@ function Navbar() {
     return (
         <div className="navbar">
             <nav>
-                <a href="#home" className="nav-link">About</a>
-                <a href="#projects" className="nav-link">Projects</a>
-                <a href="#" className="nav-link">Experiences</a>
-                <a href="#" className="nav-link">Skills</a>
-                <a href="#" className="nav-link">Resume</a>
+                <h2 id="name">Wisdom Okwen</h2>
+                <div className="nav-links">
+                    <a href="#about" className="nav-link">About</a>
+                    <a href="#projects" className="nav-link">Projects</a>
+                    <a href="#experiences" className="nav-link">Experiences</a>
+                    <a href="#skills" className="nav-link">Skills</a>
+                    <a href="https://drive.google.com/file/d/1i9hknt0d2bPmKYwxHqnJXHnh8LjkAO5W/view?usp=drive_link" className="nav-link" target="_blank">
+                        Resume
+                    </a>
+                </div>
             </nav>
         </div>
     );

@@ -1,15 +1,29 @@
 import React from 'react';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import profile_picture from '../../images/profile_picture.png';
+import about from '../../images/about.png';
 import './About.css';
+import { message } from './message';
 
 function About() {
     return (
         <div id='about'>
             <div className='left'>
-                <img src={ profile_picture } alt="profile" />
+                <img src={ about } alt="profile" />
+                <div className="socials">
+                    <a href="https://github.com/wokwen" target="_blank" rel="noreferrer"><GitHubIcon id="github"/></a> <span className='divider'></span>
+                    <a href="https://www.linkedin.com/in/wisdom-okwen-05b09a184/" target="_blank" rel="noreferrer"><LinkedInIcon id="linkedin"/></a> <span className='divider'></span> 
+                    <a href="https://www.youtube.com/channel/UC2JKlaNuQQKmPVlgxpoVCbA" target="_blank" rel="noreferrer"><YouTubeIcon id="youtube"/></a> <span className='divider'></span> 
+                    <a href="https://www.instagram.com/owska_joe/" target="_blank" rel="noreferrer"><InstagramIcon id="instagram"/></a> <span className='divider'></span>
+                    <a href="https://www.facebook.com/profile.php?id=100087329172175" target="_blank" rel="noreferrer"><FacebookIcon id="facebook"/></a> 
+                </div>
             </div>
             <div className="right">
-                <p>Hey there, my name is wisdom</p>
+                <p>{ message.message }</p>
             </div>
         </div>
     );

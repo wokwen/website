@@ -1,24 +1,37 @@
 .navbar {
+    border: 1px solid rgb(211, 211, 211);
     z-index: 1000;
-    background-color: #21bdc8;
-    overflow: hidden;
+    background-color: white;
     top: 0;
     width: 100%; 
-    position: fixed;
-    height: 60px;
+    position: fixed !important;
+    height: 10%;
+    box-shadow: 2px 2px 10px rgba(144, 144, 144, 0.5);
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%;
     overflow: hidden;
 }
 
+.nav-links {
+    display: flex; 
+    align-items: center;
+}
 .nav-link {
-    color: rgb(255, 255, 254); 
+    color: rgb(5, 11, 128); 
     margin: 20px 40px;
     text-decoration: none;
     font-size: x-large;
     font-weight: 800;
+}
+
+nav #name {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    font-weight: bolder;
 }
