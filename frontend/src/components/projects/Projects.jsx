@@ -16,7 +16,7 @@ function Projects() {
                     <div key={index} className="project-card">
                         <ProjectCard  {...project}/>
                     </div>
-                ))};
+                ))}
             </div>
         </div>
     );
