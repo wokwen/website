@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CircleIcon from '@mui/icons-material/Circle';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import PushPinIcon from '@mui/icons-material/PushPin';
+import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
 import lion from '../../images/lion.png';
 
 export default function ProjectCard(props) {
@@ -47,7 +47,7 @@ export default function ProjectCard(props) {
       />
       <div className="pin-section">
         <div className="pin">
-          <PushPinIcon id={`${props.id}`} sx={{ color: 'blue' }} />
+          <PushPinOutlinedIcon id={`${props.id}`} sx={{ color: 'blue' }} />
         </div>
         <div className="circles-container">
           <CircleIcon sx={{ color: 'red', fontSize: 'small', margin: '3px 2px', border: '1px solid black', borderRadius: '50%' }} />
@@ -87,6 +87,7 @@ export default function ProjectCard(props) {
       >
         <Button sx={{ 
           height: '35px',
+          width: '100px',
           fontWeight: 'bold',
           border: '1px solid black', 
           borderRadius: '8px',
@@ -100,22 +101,6 @@ export default function ProjectCard(props) {
           }}
         >
           Visit!
-        </Button>
-        <Button sx={{ 
-          height: '35px',
-          fontWeight: 'bold',
-          border: '1px solid black', 
-          borderRadius: '8px',
-          color: 'black', 
-          backgroundColor: 'ffffff', 
-          textTransform: 'capitalize',
-          '&:hover': { 
-            color: 'white',
-            backgroundColor: 'black' 
-            } 
-          }}
-        >
-            GitHub
         </Button>
       </CardActions>
     </Card>

@@ -7,20 +7,22 @@ const deployment_types = {
 const projects = [
     {
         id: 1,
-        title: "Contageon Simulation",
+        title: "California Housing Price Predictor",
         url: "Sample Description",
         description: "A very good project",
         built_with: ['Python ', 'Next ', 'React '],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.youtube
     },
     {
         id: 2,
-        title: "Contageon Simulation",
+        title: "CSXL Website",
         url: "",
         description: "A very good project",
-        built_with: ['React, '],
+        built_with: ['Angular, ', 'Python, ', 'FastAPI, ', 'SQLAlchemy'],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.undeployed
     },
     {
@@ -30,15 +32,17 @@ const projects = [
         description: "A very good project",
         built_with: ['React, '],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.undeployed
     },
     {
         id: 4,
-        title: "Contageon Simulation",
+        title: "Ping Pong Game",
         url: "",
         description: "A very good project that can lead to great things in life asd thweojowsdf aweohwoi waoihnjweof wfo iqa wefrwfew ",
         built_with: ['React, '],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.website
     },
     {
@@ -48,6 +52,7 @@ const projects = [
         description: "A very good project",
         built_with: ['Express, ', 'React ', 'MongoDB '],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.website
     },
     {
@@ -57,6 +62,7 @@ const projects = [
         description: "A very good project",
         built_with: ['React, '],
         media_type: 'video',
+        deployed: false,
         deployment_type: deployment_types.youtube
     },
     {
@@ -66,6 +72,7 @@ const projects = [
         description: "A very good project",
         built_with: ['React, '],
         media_type: 'video',
+        deployed:false,
         deployment_type: deployment_types.undeployed
     }
 ]
