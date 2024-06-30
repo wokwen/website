@@ -20,8 +20,8 @@ nav {
     display: flex; 
     align-items: center;
 }
+
 .nav-link {
-    color: rgb(5, 11, 128); 
     margin: 20px 40px;
     text-decoration: none;
     font-size: 1.3rem !important;
