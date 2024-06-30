@@ -21,7 +21,7 @@ const Typewriter = ({ text, delay, styles, workDomains }) => {
     if (workDomains && (currentIndex >= text.length)) {
       setActivateReactTyped(true);
     }
-  }, [currentIndex, text, workDomains])
+  }, [currentIndex, text, workDomains]);
 
   const iDoStyles =  {
     textAlign: 'center',
