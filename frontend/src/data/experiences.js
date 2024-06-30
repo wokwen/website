@@ -1,53 +1,38 @@
 const experiences = [
     {
-        title: "Research Assistant",
+        title: "Teaching Assistant",
         company: "UNC-Chapel Hill",
-        team: "Learning From Language Lab",
-        date: "Aug 2024 - May 2025",
-        tech_stack: ["Pytorch ", "Deep Learning ", "ScikitLearn "],
+        team: "UNC Dept. of Computer Science",
+        date: "Aug 2023 - present",
+        tech_stack: ["Python, ", "Debugging, ", "Teaching "],
     },
     {
         title: "Software Engineer Intern",
         company: "Microsoft Corp.",
-        team: "Canvas Power Apps",
+        team: "Power Apps Canvas",
         date: "May - Aug 2024",
-        tech_stack: ["Python ", "JavaScript ", "Postgres "],
+        tech_stack: ["Typescript, ", "React, ", "Azure "],
     },
     {
         title: "Software Engineer Intern",
         company: "ServiceNow, Inc.",
         team: "Chat Platforms",
         date: "May - Aug 2023",
-        tech_stack: ["GraphQL ", "React " , "Java "],
+        tech_stack: ["React, ", "GraphQL, " , "Java "],
     },
     {
         title: "Research Intern",
         company: "Renaissance Computing Inst.",
         team: "HelX Platform",
         date: "Aug - Dec 2022",
-        tech_stack: ["Python ", "JavaScript ", "Kubernetes "],
+        tech_stack: ["Python, ", "JavaScript, ", "Docker, ", "Kubernetes "],
     },
     {
         title: "Residential Computing Consultant",
         company: "UNC IT Services",
         team: "ResNet",
-        date: "Aug - present",
-        tech_stack: ["Troubleshooting ", "Networking "],
-    },
-    {
-        title: "Residential Computing Consultant",
-        company: "UNC IT Services",
-        team: "ResNet",
-        date: "Aug - present",
-        tech_stack: ["Troubleshooting ", "Networking "],
-    },
-    {
-        title: "Residential Computing Consultant",
-        company: "UNC IT Services",
-        team: "ResNet",
-        date: "Aug - present",
-        tech_stack: ["Troubleshooting ", "Networking "],
+        date: "Aug 2023 - present",
+        tech_stack: ["Troubleshooting, ", "Networking, ", "IT Support"],
     }
-    
 ]
 export default  experiences

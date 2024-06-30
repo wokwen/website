@@ -10,12 +10,16 @@ import 'react-multi-carousel/lib/styles.css';
 export default function Experiences() {
     const responsive = {
         superLargeDesktop: {
-          breakpoint: { max: 4000, min: 1024 },
+          breakpoint: { max: 4000, min: 2024 },
           items: 5
+        },
+        largeDesktop: {
+            breakpoint: { max: 2024, min: 1024},
+            items: 4
         },
         desktop: {
           breakpoint: { max: 1024, min: 800 },
-          items: 4
+          items: 3
         },
         tablet: {
           breakpoint: { max: 800, min: 464 },
@@ -33,7 +37,9 @@ export default function Experiences() {
             </div>
             <div className="carousel">
                 <Carousel 
-                    // cycleNavigation={true} 
+                    arrows={false}
+                    draggable={true}
+                    swipeable={true}
                     autoPlay={true} 
                     infinite={true}
                     responsive={responsive}
