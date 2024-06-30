@@ -4,10 +4,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import profile_picture from '../../images/profile_picture.png';
 import about from '../../images/about.png';
 import './About.css';
-import { message } from './message';
+import { message, name } from './message';
+import Typewriter from './TypeWriter';
 
 function About() {
     return (
@@ -23,10 +23,24 @@ function About() {
                 </div>
             </div>
             <div className="right">
-                <p>{ message.message }</p>
+                <div className='right-container'>
+                    <div className='hello'>
+                        <p style={{fontSize: '2rem'}}>
+                            { message.hello } 
+                            <span id='name'>{ name }!</span>
+                        </p>
+                    </div>
+                    <Typewriter text={message.message} delay={50} styles={typeWriterStyles} workDomains={message.whatIDo}/>
+                </div>
             </div>
         </div>
     );
+}
+
+const typeWriterStyles = {
+    fontWeight: '300',
+    fontSize: '1.6rem',
+    top: 0
 }
 
 export default About;

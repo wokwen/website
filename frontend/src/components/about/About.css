@@ -24,17 +24,27 @@
 }
 
 .right {
-    display: flex;
     width: 50%;
-    margin: auto;
-}
-.right p {
-    margin: 4rem;
-    color: rgb(24, 24, 24);
-    justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    justify-content: center;
 }
+
+.right-container {
+    width: 70%;
+    margin-top: 33%;
+}
+
+.hello {
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    /* color: blue; */
+    font-size: 2.5rem;
+    font-weight: 700
+}
+
 .socials {
     margin: 2rem;
     width: 100%;
@@ -49,14 +59,17 @@
     font-size: 50px;
     color: black;
 }
+
 #github:hover {
     color: rgb(18, 18, 197);
 }
+
 #instagram {
     margin: 0.2rem;
     font-size: 50px;
     color: black;
 }
+
 #instagram:hover {
     color: rgb(174, 0, 255);
 }

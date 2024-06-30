@@ -2,16 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
   scroll-behavior: smooth;
 }
 
 #section-name {
   font-size: 3rem;
-  /* margin: 3rem; */
 }
 
 .header {
-  /* margin: 2rem; */
   text-align: center;
 }
