@@ -24,7 +24,6 @@ const Typewriter = ({ text, delay, styles, workDomains }) => {
   }, [currentIndex, text, workDomains])
 
   const iDoStyles =  {
-    // color: 'blue',    
     textAlign: 'center',
     fontWeight: 600
   }
