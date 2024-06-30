@@ -13,8 +13,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    height: 100%;
-    overflow: hidden;
+    width: 100%;
 }
 
 .nav-links {
@@ -25,8 +24,8 @@ nav {
     color: rgb(5, 11, 128); 
     margin: 20px 40px;
     text-decoration: none;
-    font-size: x-large;
-    font-weight: 800;
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
 }
 
 nav #name {
