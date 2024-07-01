@@ -7,11 +7,11 @@ import CircleIcon from '@mui/icons-material/Circle';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
-// import csxl from '../../demos/csxl.mov';
+import csxl from '../../demos/csxl.mov';
 import contageon_simulation from '../../demos/contageon_simulation.mov';
 
 
-const project_demos = [contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation]
+const project_demos = [csxl, contageon_simulation, csxl, contageon_simulation, csxl, contageon_simulation, csxl]
 
 export default function ProjectCard(props) {
   const handleMouseOver = () => {
