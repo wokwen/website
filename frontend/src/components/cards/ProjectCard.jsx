@@ -7,20 +7,24 @@ import CircleIcon from '@mui/icons-material/Circle';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
-import lion from '../../images/lion.png';
+// import csxl from '../../demos/csxl.mov';
+import contageon_simulation from '../../demos/contageon_simulation.mov';
+
+
+const project_demos = [contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation, contageon_simulation]
 
 export default function ProjectCard(props) {
   const handleMouseOver = () => {
     const pin = document.getElementById(`${props.id}`);
     if (pin) {
-      pin.style.display = 'none';
+      pin.style.display = 'inline';
     }
   };
 
   const handleMouseLeave = () => {
     const pin = document.getElementById(`${props.id}`);
     if (pin) {
-      pin.style.display = 'inline';
+      pin.style.display = 'none';
     }
   };
 
@@ -41,13 +45,18 @@ export default function ProjectCard(props) {
       onMouseLeave={handleMouseLeave}
     >
       <CardMedia
-        sx={{ height: 240 }}
-        image={ lion }
-        title={ props.title }
+        sx={{ width: '100%', height: 240 }}
+        component='video'
+        src={project_demos[props.id - 1]}
+        title={props.title}
+        autoPlay
+        loop
+        muted
+        aria-label={props.title}
       />
       <div className="pin-section">
         <div className="pin">
-          <PushPinOutlinedIcon id={`${props.id}`} sx={{ color: 'blue' }} />
+          <PushPinOutlinedIcon id={`${props.id}`} sx={{ display: 'none', color: 'blue' }} />
         </div>
         <div className="circles-container">
           <CircleIcon sx={{ color: 'red', fontSize: 'small', margin: '3px 2px', border: '1px solid black', borderRadius: '50%' }} />
@@ -55,17 +64,16 @@ export default function ProjectCard(props) {
           <CircleIcon sx={{ color: 'green', fontSize: 'small', margin: '0 2px', border: '1px solid black', borderRadius: '50%' }} />
         </div>
       </div>
-      
       <CardContent>
         <Typography 
-          sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', width: '200px' }}
+          sx={{ fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', width: '300px' }}
           gutterBottom 
           variant="h6" component="div"
         >
           { props.title }
         </Typography>
         <Typography 
-          sx={{ display: '-webkit-box', overflow: 'hidden', WebkitBoxOrient: 'vertical', WebkitLineClamp: 2, lineHeight: '1.2em', height: '2.4em', }}
+          sx={{ display: '-webkit-box', overflow: 'hidden', WebkitBoxOrient: 'vertical', WebkitLineClamp: 3, lineHeight: '1.2em', height: '3.6em', }}
           variant="body3" 
           color="text.secondary"
           component="div"
@@ -73,7 +81,7 @@ export default function ProjectCard(props) {
           { props.description }
         </Typography>
         <Typography 
-          sx={{ marginTop: '8px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', width: '200px' }}
+          sx={{ fontWeight: 520, marginTop: '8px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', width: '300px' }}
           gutterBottom 
           variant="body3" component="div"
         >
@@ -86,6 +94,7 @@ export default function ProjectCard(props) {
         }}
       >
         <Button sx={{ 
+          position: 'absolute',
           height: '35px',
           width: '100px',
           fontWeight: 'bold',
@@ -99,6 +108,8 @@ export default function ProjectCard(props) {
             backgroundColor: 'black' 
             } 
           }}
+          href={props.url}
+          target='_blank'
         >
           Visit!
         </Button>

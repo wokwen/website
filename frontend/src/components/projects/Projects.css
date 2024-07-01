@@ -44,7 +44,7 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 2px;
+    padding: 3px;
 }
 
 .circles-container {
@@ -55,7 +55,7 @@ h1 {
 }
 
 .pin {
-    width: 3%;
+    width: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
