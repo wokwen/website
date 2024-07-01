@@ -15,8 +15,6 @@
     margin: auto;
 }
 
-.exp-card {}
-
 @media (min-width: 2000) {
     .carousel {
         max-width: 55%;
