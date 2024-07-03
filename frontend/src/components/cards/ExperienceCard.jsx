@@ -7,7 +7,16 @@ import Typography from '@mui/material/Typography';
 
 export default function ExperienceCard(props) {
   return (
-    <Box sx={{ width: 350, height: 200, margin: '0 5px', boxShadow: 3 }}>
+    <Box sx={{ 
+        width: 350, 
+        height: 200, 
+        margin: '0 5px', 
+        boxShadow: 3,
+        ":hover": {
+          cursor: 'grab'
+        }
+      }}
+    >
       <Card sx={{ marginBottom: 1, width: 350, height: 200 }} variant="outlined">
         <CardContent>
           <Typography  variant="h5" component="div">
